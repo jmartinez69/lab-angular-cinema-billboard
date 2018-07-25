@@ -1,6 +1,3 @@
-<p>
-  my-home-component works!
-</p>
 <div class="Ironhack">
   <h4><img src="assets/Ironhack.png">
     <h3>Ironhack Movies</h3>
@@ -12,8 +9,8 @@
      <div class="movieContainer">
        <h3>
          <h4>ROOM {{shoot.room}}</h4>
-         <img src="{{shoot.poster}}">
-         <p>{{shoot.title}}</p>
+         <img src="{{shoot.poster}}"><br>
+         <a  [routerLink]="['/movie',shoot.id]">{{shoot.title}}</a>
        </h3>
      </div>
 
