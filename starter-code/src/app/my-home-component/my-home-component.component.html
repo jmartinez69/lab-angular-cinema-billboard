@@ -1,0 +1,21 @@
+<p>
+  my-home-component works!
+</p>
+<div class="Ironhack">
+  <h4><img src="assets/Ironhack.png">
+    <h3>Ironhack Movies</h3>
+  </h4>
+</div>
+<br><br>
+<div class="moviesContainer">
+  <div *ngFor="let shoot of listaMovies">
+     <div class="movieContainer">
+       <h3>
+         <h4>ROOM {{shoot.room}}</h4>
+         <img src="{{shoot.poster}}">
+         <p>{{shoot.title}}</p>
+       </h3>
+     </div>
+
+  </div>
+</div>
